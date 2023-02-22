@@ -31,7 +31,7 @@ jobs:
       run: mvn install -DskipTests
 
     - name: Build & push Docker image
-        uses: mr-smithers-excellent/docker-build-push@v5
+      uses: mr-smithers-excellent/docker-build-push@v5
         with:
           image: vineshjalla/coustmerbank-details
           tags: v1, latest
