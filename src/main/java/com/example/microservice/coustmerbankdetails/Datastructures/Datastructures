@@ -1,0 +1,59 @@
+
+===>Differnce between list,stack and queues?
+
+A:List, stack, and queue are all data structures used to store and manipulate collections of elements, but they have different characteristics and behaviors.
+
+  A list is a collection of elements in which each element is identified by an index or a key.
+   Lists are often used to store and manipulate data in a sequential manner, and elements can be inserted or removed from anywhere in the list. Lists can be implemented using arrays, linked lists, or other data structures.
+
+  A stack is a collection of elements in which the last element added is the first one to be removed, following a last-in, first-out (LIFO) ordering.
+   Elements can only be added or removed from the top of the stack, which is why it is also called a "push-down" stack. Stacks are commonly used in algorithms such as depth-first search and postfix notation. They can be implemented using arrays, linked lists, or other data structures.
+
+  A queue is a collection of elements in which the first element added is the first one to be removed, following a first-in, first-out (FIFO) ordering.
+   Elements can be added to the back of the queue and removed from the front of the queue, which is why it is also called a "first-in, first-out" queue. Queues are commonly used in algorithms such as breadth-first search and job scheduling. They can be implemented using arrays, linked lists, or other data structures.
+
+  In summary, the main differences between lists, stacks, and queues are in their ordering and the way in which elements are added and removed. Lists allow for random access to elements, while stacks and queues restrict access to only the top or front/back elements, respectively.
+
+
+***************************important*********************************************
+ Sure, here is a list of Java Collection interfaces with their definitions and implementation class names:
+
+ 1: List: An ordered collection of elements that allows duplicates.
+ Interface: java.util.List
+ Implementation classes:
+ ArrayList: Resizable array implementation of the List interface.
+ LinkedList: Doubly-linked list implementation of the List interface.
+ Vector: Thread-safe implementation of the List interface.
+ Stack: Thread-safe implementation of the List interface that extends Vector.
+
+ 2:Set: A collection of unique elements.
+ Interface: java.util.Set
+ Implementation classes:
+ HashSet: Implementation of the Set interface that uses a hash table to store elements.
+ LinkedHashSet: Implementation of the Set interface that maintains the order of elements as they are inserted.
+ TreeSet: Implementation of the Set interface that maintains elements in sorted order.
+
+ 3:Queue: A collection of elements in which elements are added at one end and removed from the other end.first-in-first-out.
+ Interface: java.util.Queue
+ Implementation classes:
+ LinkedList: Doubly-linked list implementation of the Queue interface.
+ PriorityQueue: Priority queue implementation of the Queue interface.
+
+ 4:Deque: A double-ended queue that allows insertion and removal of elements at both ends.
+ Interface: java.util.Deque
+ Implementation classes:
+ ArrayDeque: Resizable-array implementation of the Deque interface.
+ LinkedList: Doubly-linked list implementation of the Deque interface.
+
+ 5:Map: A collection of key-value pairs, where each key is associated with a unique value.
+ Interface: java.util.Map
+ Implementation classes:
+ HashMap: Implementation of the Map interface that uses a hash table to store key-value pairs.
+ LinkedHashMap: Implementation of the Map interface that maintains the order of key-value pairs as they are inserted.
+ TreeMap: Implementation of the Map interface that maintains key-value pairs in sorted order.
+ Hashtable: Legacy implementation of the Map interface that is synchronized (thread-safe).
+ Properties: Legacy implementation of the Map interface that is used to maintain a collection of configuration properties.
+
+6: Stack: A collection of elements that supports push and pop operations, where elements are added and removed from the top of the stack.
+ Class: java.util.Stack (extends Vector)
+ The implementation classes mentioned above are all part of the java.util package in Java. Developers can use these data structures to store and manipulate collections of objects in their Java programs.
